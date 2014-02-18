@@ -1,6 +1,6 @@
 User-submitted Leaflet map
 ===========
-This is a WIP, combining @courieressig's "Tabletop to Leaflet" and @mapbox's "Geo for Google Docs" into a single entity.
+This is a WIP, combining @courieressig's ["Tabletop to Leaflet"](https://github.com/csessig86/tabletop_to_leaflet) and @mapbox's ["Geo for Google Docs"](https://github.com/mapbox/geo-googledocs) into a single entity.
 
 It's a responsive mapping tool that allows users to submit locations, and with one click, geocode said locations to a leaflet-based map.
 
@@ -8,7 +8,7 @@ It's a responsive mapping tool that allows users to submit locations, and with o
 * @mapbox's original script also looped and created additional columns with each geocode, this has been fixed. 
 * @mapbox's original script also included a geo_accuracy column, this has been removed as it wasn't being used by Tabletop to Leaflet.
 
-To do list
+To do list/broken stuff
 ===========
 * Styling has to be fixed, and most of the original files from @courieressig's tool is still there
 
