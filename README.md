@@ -31,7 +31,7 @@ Setting up Tabletop
 * Return to the spreadsheet, rename the headers to one-word lowercase words/titles
 
 * Open up the js/script.js or js/script_cluster.js file and add your spreadsheet ID as a value to the spreadsheetKey key in the initializeTabletopObject. This is on line 19 of the file.
-	initializeTabletopObject('0Aq-sgqQU9ojidFR6aG9rS3ZpRElkdFNPVDFDenhGMnc');
+	```initializeTabletopObject('0Aq-sgqQU9ojidFR6aG9rS3ZpRElkdFNPVDFDenhGMnc');```
 
 Setting up Leaflet
 ===========
