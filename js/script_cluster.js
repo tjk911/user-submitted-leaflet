@@ -16,7 +16,7 @@ map.addLayer(cloudmade);
 // First we'll initialize Tabletop with our spreadsheet
 var jqueryNoConflict = jQuery;
 jqueryNoConflict(document).ready(function(){
-	initializeTabletopObject('0Aq-sgqQU9ojidDdLcXM5NXRvQTdYSHVKZHpIa3ktTEE');
+	initializeTabletopObject('0Aq-sgqQU9ojidFR6aG9rS3ZpRElkdFNPVDFDenhGMnc');
 });
 
 // Pull data from Google spreadsheet
@@ -46,11 +46,12 @@ function startUpLeafet(tabletopData) {
 		// Our table columns
 		// Change 'brewery', 'address', etc.
 		// To match table column names in your table
-		var dataOne = tabletopData[num].restaurant;
+		var dataOne = tabletopData[num].locationname;
 		var dataTwo = tabletopData[num].address;
 		var dataThree = tabletopData[num].city;
 		var dataFour= tabletopData[num].phone;
 		var dataFive = tabletopData[num].website;
+
 
 		// Pull in our lat, long information
 		var dataLat = tabletopData[num].latitude;

@@ -1,8 +1,8 @@
 // Set view of Leaflet map based on screen size
 if ($(window).width() < 626) {
-	var map = new L.Map('map').setView([42,-93],6);
+	var map = new L.Map('map').setView([45.532234,-94.181655],6);
 } else {
-	var map = new L.Map('map').setView([42,-91.5],7);
+	var map = new L.Map('map').setView([45.532234,-94.181655],7);
 }
 
 // Information for the base tile via Cloudmade
@@ -16,7 +16,7 @@ map.addLayer(cloudmade);
 // First we'll initialize Tabletop with our spreadsheet
 var jqueryNoConflict = jQuery;
 jqueryNoConflict(document).ready(function(){
-	initializeTabletopObject('0Aq-sgqQU9ojidDdLcXM5NXRvQTdYSHVKZHpIa3ktTEE');
+	initializeTabletopObject('0Aq-sgqQU9ojidFR6aG9rS3ZpRElkdFNPVDFDenhGMnc');
 });
 
 // Pull data from Google spreadsheet
@@ -41,7 +41,7 @@ function startUpLeafet(tabletopData) {
 		// Our table columns
 		// Change 'brewery', 'address', etc.
 		// To match table column names in your table
-		var dataOne = tabletopData[num].brewery;
+		var dataOne = tabletopData[num].locationname;
 		var dataTwo = tabletopData[num].address;
 		var dataThree = tabletopData[num].city;
 		var dataFour= tabletopData[num].phone;
