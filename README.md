@@ -10,17 +10,19 @@ It's a responsive mapping tool that allows users to submit locations, and with o
 
 To do list
 ===========
-* Styling has to be fixed, and most of the original files from @courieressig's tool is still there.
+* Styling has to be fixed, and most of the original files from @courieressig's tool is still there
 
-* Update readme to combine both @courieressig and @mapbox's scripts.
+* Update readme to combine both @courieressig and @mapbox's scripts
 
 * Update readme to provide more leaflet styling/plugin info
+
+* Create examples
 
 * Debug having too many columns/sources (should be some silly error on my end, temporarily ignored by removing references).
 
 Setting up Tabletop
 ===========
-* Create a Google Docs spreadsheet, and ensure that anyone who has the link can view it.
+* Create a Google Docs spreadsheet, and ensure that anyone who has the link can view it
 
 * On the menu bar, click "Insert > Form" and create the relevant form, making sure that address fields are asked (address, state, zip)
 
@@ -60,7 +62,7 @@ Geocode installation
 ===========
 
 * Copy the source of geocode.js (located in js/geocode.js)
-* Open your spreadsheet and goto tools > script editor
+* Open your spreadsheet and go to tools > script editor
 * Replace the content in the text box with the copied source from mapbox.js
 * Set the name of this script to geo
 * Go to file > save and close the popup window
@@ -70,6 +72,7 @@ Geocode usage
 ===========
 * Highlight/select the relevant cells, they can be a single cell or multiple cells
 * Click "Geo" and select "Geocode Addresses" and choose an API, MapQuest requires no API key while the others (Yahoo & Cicero) requires one
+* Note, please abide by MapQuest's [ToS here](https://developer.mapquest.com/web/products/open/geocoding-service)
 * Two additional columns titled longitude and latitude should be created with the relevant data
 * If the columns already exist, it should be updated/filled instead of created
 
