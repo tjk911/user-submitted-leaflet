@@ -1,3 +1,22 @@
+User-submitted Leaflet map
+===========
+This is a WIP, combining @courieressig's "Tabletop to Leaflet" and @mapbox's "Geo for Google Docs" into a single entity.
+
+It's a responsive mapping tool that allows users to submit locations, and with one click, geocode said locations to a leaflet-based map.
+
+@courieressig's original tool relied on Bootstrap, this has been tweaked to run on Foundation instead. 
+@mapbox's original script also looped and created additional columns with each geocode, this has been fixed. 
+@mapbox's original script also included a geo_accuracy column, this has been removed as it wasn't being used by Tabletop to Leaflet.
+
+To do list
+===========
+* Styling has to be fixed, and most of the original files from @courieressig's tool is still there.
+
+* Update readme to combine both @courieressig and @mapbox's scripts.
+
+Below is the original readme from @courieressig and @mapbox
+
+```
 Tabletop to Leaflet
 ===========
 * [Live demo](http://wcfcourier.com/app/special/tabletop_to_leaflet)
@@ -58,3 +77,16 @@ Styling the map
 Plugins
 ===========
 * You can also use [Leaflet plugins](http://leafletjs.com/plugins.html‎) with the map. One example is the [Leaflet.markercluster plugin](https://github.com/Leaflet/Leaflet.markercluster), which clusters markers that are close together. You can see an example of this with the "index_cluster.html" file. A live example can be viewed by [clicking here](http://wcfcourier.com/app/special/tabletop_to_leaflet/index_cluster.html).
+
+
+Mapbox Geo for Google Docs
+===========
+Installation
+
+* Copy the source of mapbox.js
+* Open your spreadsheet and goto tools > script editor
+* Replace the content in the text box with the copied source from mapbox.js
+* Set the name of this script to geo
+* Go to file > save and close the popup window
+* Refresh your spreadsheet and you will see a new menu called Geo added after Help on the menu bar
+```
