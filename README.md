@@ -4,6 +4,7 @@ Demo
 * [Live Demo](http://www.sctimesapps.com/kaitest/user-submitted-leaflet/index_cluster.html)
 * [Google Docs Spreadsheet](https://docs.google.com/spreadsheet/pub?key=0Aq-sgqQU9ojidFR6aG9rS3ZpRElkdFNPVDFDenhGMnc&output=html)
 * [Google Docs form to update spreadsheet](https://docs.google.com/forms/d/1StWOf16sCyrTxvXzvnDR7gJKp1AvLQNlMoDQ0oczJSs/viewform)
+* [Get Lat Long]("http://getlatlon.yohman.com") is useful to fix/tweak wrong locations
 
 Note: Map does not update automatically, requires running (two-to-three click) script.
 

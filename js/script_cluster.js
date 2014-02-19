@@ -5,8 +5,7 @@ if ($(window).width() < 626) {
 	var map = new L.Map('map').setView([45.532234,-94.181655],7);
 }
 
-// Information for the base tile via Cloudmade
-// Add to map
+// Define the different layers and default layer
 var defaultLayer = L.tileLayer('http://{s}.tiles.mapbox.com/v3/nps.map-lj6szvbq/{z}/{x}/{y}.png', {maxZoom:18}).addTo(map);
 
 var baseLayers = {
@@ -22,13 +21,14 @@ var overlayLayers = {
 			'OpenWeatherMap Temperature': L.tileLayer.provider('OpenWeatherMap.Temperature'),
 			'OpenWeatherMap Snow': L.tileLayer.provider('OpenWeatherMap.Snow')
 		};
+
+// Set controller for layers depending on screen size and add to map
 if ($(window).width() < 626) {
 	var layerControl = new L.control.layers(baseLayers, overlayLayers, {collapsed: true, position:'topleft'}).addTo(map);
 } else {
 	var layerControl = new L.control.layers(baseLayers, overlayLayers, {collapsed: false, position:'topleft'}).addTo(map);
 }
 
-// 
 
 // Here's the Tabletop feed
 // First we'll initialize Tabletop with our spreadsheet
