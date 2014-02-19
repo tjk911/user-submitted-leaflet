@@ -94,11 +94,11 @@ hr {
 /* Mobile only */
 .toggle_description {
 	display: none;
-	z-index: 9;
-	position: relative;
+	z-index: 11;
+	position: absolute;
 	float: right;
     right: 0%;
-    top: 0%;
+    top: 4%;
 }
 
 .description_box_cover {
@@ -213,16 +213,9 @@ hr {
 		width: 100%;
 	}
 	
-
-	/* Social buttons */
-	#share {
-		display: none;
-	}
-	
-	
 	/* Sidebar */
 	#sidebar {
-		position: relative;
+		position: absolute;
 		border-width: 0 0 1px;
 		border-bottom: 1px solid #FFFFFF;
 		margin-top: 0%;
@@ -232,8 +225,10 @@ hr {
 		top: 0%;
 		padding-left: 2%;
 		padding-right: 2%;
-		width: 96%;
+		width: 100%;
 		height: auto;
+		opacity: .75;
+		padding-top: 4px;
 	}
 
 	#sidebar h3 {
@@ -251,6 +246,7 @@ hr {
 
 	.toggle_description {
 		display: inline;
+		opacity: .5;
 	}
 
 	

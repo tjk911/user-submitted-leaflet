@@ -8,6 +8,14 @@ It's a responsive mapping tool that allows users to submit locations, and with o
 * @mapbox's original script also looped and created additional columns with each geocode, this has been fixed. 
 * @mapbox's original script also included a geo_accuracy column, this has been removed as it wasn't being used by Tabletop to Leaflet.
 
+Changelog
+===========
+
+v.01 
+* Added layer control with optional overlays using Leaflet providers plugin
+* Tweaked styling to be responsive properly (was horribly broken earlier due to haphazard Foundation transition)
+
+
 To do list/broken stuff
 ===========
 * Styling has to be fixed, and most of the original files from @courieressig's tool is still there
@@ -17,6 +25,10 @@ To do list/broken stuff
 * Update readme to provide more leaflet styling/plugin info
 
 * Create examples
+
+* Layer controller missing icon for some darned reason
+
+* Layer controller not toggling between collapsed and exposed for different screen sizes
 
 * Debug having too many columns/sources (should be some silly error on my end, temporarily ignored by removing references).
 

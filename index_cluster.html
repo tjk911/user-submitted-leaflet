@@ -2,7 +2,7 @@
 <html lang="en">
 <head prefix="og: http://wcfcourier.com/app/special/tabletop_to_leaflet/index_cluster.html">
 <head>
-	<title>Tabletop to Leaflet with marker clusters</title>
+	<title>User-submitted leaflet map (clusters)</title>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -25,16 +25,15 @@
 	<script type="text/javascript" src="js/leaflet.js"></script>
 	<script type="text/javascript" src="cluster_addons/leaflet.markercluster-src.js"></script>
 	<script type="text/javascript" src="js/tabletop.js"></script>
-    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
 
     <noscript>
 		<div id="noscript_note">
 			You must have JavaScript enabled to view this page.
 		</div>
 	</noscript>
-	<div id="sidebar">
+	<div class="large-4 columns" id="sidebar">
 		<div class="sidebar_header">
-			<h3>Tabletop to Leaflet</h3>
+			<h3>User-submitted leaflet</h3>
 		</div>
 
 		<div class="sidebar_content">
@@ -46,13 +45,13 @@
 		</div>
 	</div>
 
-	<div class="toggle_description btn" type="button">
+	<div class="toggle_description button radius round tiny" type="button">
 		About this map
 	</div>
 
 	<div class="description_box">
-		<div class="x_button toggle_description btn btn-primary" type="button">
-			<strong>X</strong>
+		<div class="toggle_description button tiny" type="button">
+			x
 		</div>
 		<div class="description_box_header"></div>
 		<div class="description_box_content">
@@ -66,8 +65,8 @@
 		<div id="map" style="height:800px;"></div>
 		
 	</div>
-
-
+	<script src="js/leaflet-providers.js"></script>
 	<script src="js/script_cluster.js"></script>
+
 </body>
 </html>

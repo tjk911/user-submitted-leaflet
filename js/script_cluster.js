@@ -6,11 +6,35 @@ if ($(window).width() < 626) {
 }
 
 // Information for the base tile via Cloudmade
-var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/f14689c8008d43da9028a70e6a8e710a/2402/256/{z}/{x}/{y}.png'
-var cloudmade = new L.TileLayer(cloudmadeUrl, {maxZoom: 18});
 // Add to map
-map.addLayer(cloudmade);
+var defaultLayer = L.tileLayer('http://{s}.tiles.mapbox.com/v3/nps.map-lj6szvbq/{z}/{x}/{y}.png', {maxZoom:18}).addTo(map);
 
+var baseLayers = {
+			'Default Mapbox': L.tileLayer('http://{s}.tiles.mapbox.com/v3/nps.map-lj6szvbq/{z}/{x}/{y}.png'),
+			'MapQuest Aerial': L.tileLayer.provider('MapQuestOpen.Aerial'),
+			'MapQuest OSM': L.tileLayer.provider('MapQuestOpen.OSM'),
+			// 'Stamen Watercolor': L.tileLayer.provider('Stamen.Watercolor')
+		};
+
+var overlayLayers = {
+			'OpenWeatherMap PressureContour': L.tileLayer.provider('OpenWeatherMap.PressureContour'),
+			'OpenWeatherMap Wind': L.tileLayer.provider('OpenWeatherMap.Wind'),
+			'OpenWeatherMap Temperature': L.tileLayer.provider('OpenWeatherMap.Temperature'),
+			'OpenWeatherMap Snow': L.tileLayer.provider('OpenWeatherMap.Snow')
+		};
+// if ($(window).width() < 626) {
+// 	var layerOptions = {collapsed: true, position:'topleft'}
+// 	var layerControl = (baseLayers, overlayLayers, layerOptions)
+// } else {
+// 	var layerOptions = {collapsed: false, position:'topleft'}
+// 	var layerControl = (baseLayers, overlayLayers, layerOptions)
+// }
+
+L.control.layers(baseLayers, overlayLayers, {collapsed: true, position:'topleft'}).addTo(map);
+// var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/f14689c8008d43da9028a70e6a8e710a/2402/256/{z}/{x}/{y}.png'
+// var cloudmade = new L.TileLayer(cloudmadeUrl, {maxZoom: 18});
+
+// var layerControldeploy = L.control.layers(layerControl).addTo(map);
 
 // Here's the Tabletop feed
 // First we'll initialize Tabletop with our spreadsheet
