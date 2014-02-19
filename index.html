@@ -34,11 +34,13 @@
 		</div>
 
 		<div class="sidebar_content">
-			<p>This template pulls data from a <a href="https://docs.google.com/spreadsheet/pub?key=0As3JvOeYDO50dF9NWWRiaTdqNmdKQ1lCY3dpdDhZU3c&output=html" target="_blank">Google spreadsheet</a> and pushes it to a Leaflet map. The data we are using in this example is a list of breweries in Iowa.</p>
-			<p>The map template is responsive, meaning it works on screens both big and small.</p>
-			<p>It uses <a href="http://leafletjs.com/" target="_blank">Leaflet</a>, <a href="http://builtbybalance.com/Tabletop/" target="_blank">Tabletop</a> and <a href="http://twitter.github.io/bootstrap/" target="_blank">Bootstrap</a>.</p>
-			<p>If you have any questions, feel free to contact <a href="https://twitter.com/courieressig" target="_blank">Chris Essig</a>.</p>
-			<p>H/T to <a href="https://twitter.com/ChrisLKeller" target="_blank">Chris Keller</a> for his work on his Tabletop to DataTables <a href="https://github.com/chrislkeller/datafeed_to_datatables" target="_blank">template</a>.</p>
+			<p>This simple tool currently pulls data from a <a href="https://docs.google.com/spreadsheet/pub?key=0Aq-sgqQU9ojidFR6aG9rS3ZpRElkdFNPVDFDenhGMnc&output=html">Google Docs Spreadsheet</a>.</p>
+			<p>Spreadsheet can be updated manually by owner, or through this <a href="https://docs.google.com/forms/d/1StWOf16sCyrTxvXzvnDR7gJKp1AvLQNlMoDQ0oczJSs/viewform">form</a>.</p>
+			<p>Geocoding is done through a spreadsheet script. Accuracy and position has to be tweaked at times.</p>
+			<p>Tools & scripts used include Leaflet, Tabletop and Foundation.</p>
+			<p>It's a WIP, but feel free to fork it <a href="http://github.com/tjk911/user-submitted-leaflet">here</a> or do a pull request or just tweet <a href="http://twitter.com/jkteoh">Kai Teoh</a> (me).</p>
+			<p>H/T to the original creator <a href="http://twitter.com/courieressig">Chris Essig</a> for making combining Tabletop and Leaflet together, and also to <a href="http://twitter.com/mapbox">MapBox</a> for their geocoding script.</p>
+			<p>Geocoding Courtesy of <a href="http://www.mapquest.com/" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png"></p>
     	</div>
 	</div>
 
@@ -59,7 +61,7 @@
 	<div class="description_box_cover"></div>
 	
 	<div id="map" style="height:800px"></div>
-
+	<script src="js/leaflet-providers.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

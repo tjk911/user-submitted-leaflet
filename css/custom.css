@@ -33,13 +33,13 @@ a {
 
 /* Map */
 #map {
-	/* background-color: #08304a; */
-	/*position: absolute;*/
-	/*float: left;*/
-	/*top: 1%;*/
-	/*height: 98%;*/
+	 background-color: #08304a; 
+	position: absolute;
+	float: left;
+	top: 1%;
+	height: 98%;
 	width: 100%;
-	/*z-index: 7;*/
+	z-index: 7;
 }
 
 /* Sidebar */
@@ -62,10 +62,10 @@ a {
 }
 
 .sidebar_content {
-	width: 32%;
-	height: 70%;
+	/*width: 32%;*/
+	height: 80%;
 	padding-top: 5px;
-	position: fixed;
+	/*position: fixed;*/
 	overflow: auto;
 }
 
