@@ -36,7 +36,7 @@ a {
 	 background-color: #08304a; 
 	position: absolute;
 	float: left;
-	top: 1%;
+	/*top: 1%;*/
 	height: 98%;
 	width: 100%;
 	z-index: 7;
