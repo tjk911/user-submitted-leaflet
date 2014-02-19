@@ -22,19 +22,13 @@ var overlayLayers = {
 			'OpenWeatherMap Temperature': L.tileLayer.provider('OpenWeatherMap.Temperature'),
 			'OpenWeatherMap Snow': L.tileLayer.provider('OpenWeatherMap.Snow')
 		};
-// if ($(window).width() < 626) {
-// 	var layerOptions = {collapsed: true, position:'topleft'}
-// 	var layerControl = (baseLayers, overlayLayers, layerOptions)
-// } else {
-// 	var layerOptions = {collapsed: false, position:'topleft'}
-// 	var layerControl = (baseLayers, overlayLayers, layerOptions)
-// }
+if ($(window).width() < 626) {
+	var layerControl = new L.control.layers(baseLayers, overlayLayers, {collapsed: true, position:'topleft'}).addTo(map);
+} else {
+	var layerControl = new L.control.layers(baseLayers, overlayLayers, {collapsed: false, position:'topleft'}).addTo(map);
+}
 
-L.control.layers(baseLayers, overlayLayers, {collapsed: true, position:'topleft'}).addTo(map);
-// var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/f14689c8008d43da9028a70e6a8e710a/2402/256/{z}/{x}/{y}.png'
-// var cloudmade = new L.TileLayer(cloudmadeUrl, {maxZoom: 18});
-
-// var layerControldeploy = L.control.layers(layerControl).addTo(map);
+// 
 
 // Here's the Tabletop feed
 // First we'll initialize Tabletop with our spreadsheet

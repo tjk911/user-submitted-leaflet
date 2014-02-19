@@ -13,7 +13,9 @@ Changelog
 
 v.01 
 * Added layer control with optional overlays using Leaflet providers plugin
+* Added layer control to respond to viewport
 * Tweaked styling to be responsive properly (was horribly broken earlier due to haphazard Foundation transition)
+* Added viewport 100% height as standard
 
 
 To do list/broken stuff
@@ -26,9 +28,9 @@ To do list/broken stuff
 
 * Create examples
 
-* Layer controller missing icon for some darned reason
+~~* Layer controller missing icon for some darned reason~~
 
-* Layer controller not toggling between collapsed and exposed for different screen sizes
+~~* Layer controller not toggling between collapsed and exposed for different screen sizes~~
 
 * Debug having too many columns/sources (should be some silly error on my end, temporarily ignored by removing references).
 
