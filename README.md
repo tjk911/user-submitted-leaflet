@@ -1,8 +1,9 @@
 Demo
 ===========
 
-* [Live Demo](http://www.sctimesapps.com/kaitest/user-submitted-leaflet/index_cluster.html)
-* [Google Docs Spreadsheet](https://docs.google.com/spreadsheet/pub?key=0Aq-sgqQU9ojidFR6aG9rS3ZpRElkdFNPVDFDenhGMnc&output=html)
+* [Live Demo 1](http://www.sctimesapps.com/kaitest/user-submitted-leaflet/index_cluster.html)
+* [Live Demo 2 (8/5/2014)](http://www.sctimesapps.com/kaitest/20140805/index.html)
+* [Google Docs Spreadsheet for Live Demo 1](https://docs.google.com/spreadsheet/pub?key=0Aq-sgqQU9ojidFR6aG9rS3ZpRElkdFNPVDFDenhGMnc&output=html)
 * [Google Docs form to update spreadsheet](https://docs.google.com/forms/d/1StWOf16sCyrTxvXzvnDR7gJKp1AvLQNlMoDQ0oczJSs/viewform)
 * [Get Lat Long]("http://getlatlon.yohman.com") is useful to fix/tweak wrong locations
 
