@@ -22,6 +22,12 @@ It's a responsive mapping tool that allows users to submit locations, and with o
 Changelog
 ===========
 
+v.02
+* Updated tabletop.js in order for it to work with new Google Spreadsheets (or whatever they're calling it now)
+* Updated custom.css to trigger the "mobile" view earlier (at 1024px) as HDPI and higher mobile devices were looking bad
+* Removed original index.html and script.js, default comes with cluster support now
+
+
 v.01 
 * Added layer control with optional overlays using Leaflet providers plugin
 * Added layer control to respond to viewport

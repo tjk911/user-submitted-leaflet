@@ -196,7 +196,7 @@ hr {
 }
 
 /* Styles from mobile devices */
-@media (max-width: 625px) {
+@media (max-width: 1024px) {
 	/* Headers */
 	h1, h2, h3 {
     	line-height: 20px;
